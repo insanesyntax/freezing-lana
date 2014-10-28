@@ -20,4 +20,9 @@
         Tom Wolfskämpf
         </author>
 
+        <gap:splash src="splash.png" />
+
+
+
+
     </widget>
