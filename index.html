@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/flat-ui.css">
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/finalstyle.css"> <!-- Letzer Schliff -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr Skript -->
+  	
+	<title>Schütz' Dich, deine Daten und deine Zukunft!</title>
+</head>
+<body>
+	<nav>
+		<ul class="cd-primary-nav"> <!--- Das Menü oben rechts in der Ecke, jedes <li> ist ein Eintrag -->
+			<li><a href="fragenantworten/fragenantworten.html">Zu den Anleitungen</a></li>
+			<li><a href="#0">Der Gedanke hinter dem Projekt</a></li>
+			<li><a href="#0">Wer wir sind</a></li>
+			<li><a href="#0">Impressum</a></li>
+			<li><a href="#0">Haftungsausschluss</a></li>
+		</ul>
+	</nav>
+	
+		<div class="jumbotron"> <!--- Das Jumbotron ist mit einer Höhe von 100% immer so hoch, dass es die gesamte initiale Fläche bedeckt -->
+			<div class="container" id="headerjumbotron">
+				<h1 id="h1-h2-schuetzdich">Schütz' Dich, deine Daten & deine Zukunft!</h1>
+				<h2 id="h1-h2-schuetzdich">Deine Fragen, deine Antworten</h2>
+				<div>
+					<a href="fragenantworten/fragenantworten.html" id="btn-rosa">Los geht's</a>
+				</div>
+				<div id="linkzumvideo">
+					<a href="#videoanchor" id="btn-rosa">Video</a>
+				</div>
+			</div>
+		</div>
+		
+		<div id="video" class="container-fluid">
+			<a id="videoanchor"></a> <!--- Der Knopf "Video" führt hier hin, durch css ist der anchor 15px nach oben (top: -15px) gesetzt, um perfekt mit dem gelben Rand abzuschließen -->
+			<div class="embed-responsive embed-responsive-16by9">
+				<iframe class="embed-responsive-item" src="//www.youtube.com/embed/4hGP_MyZq8U?modestbranding=1&autohide=1&showinfo=0&controls=0"></iframe>
+			</div>
+		</div>
+	
+	<div class="footer">
+		<p></p>
+	</div>
+		
+		<!-- cd-content -->
+
+	<div class="cd-overlay-nav">
+		<span></span>
+	</div> <!-- cd-overlay-nav -->
+
+	<div class="cd-overlay-content">
+		<span></span>
+	</div> <!-- cd-overlay-content -->
+
+	<a href="#0" class="cd-nav-trigger">Menü<span class="cd-icon"></span></a>
+	
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/velocity.min.js"></script>
+<script src="js/main.js"></script> <!-- jQuery Einbindung -->
+<script>
+$(document).ready(function() {
+  function filterPath(string) {
+    return string
+      .replace(/^\//,'')  
+      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')  
+      .replace(/\/$/,'');
+  }
+  $('a[href*=#]').each(function() {
+    if ( filterPath(location.pathname) == filterPath(this.pathname)
+    && location.hostname == this.hostname
+    && this.hash.replace(/#/,'') ) {
+      var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+      var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+       if ($target) {
+         var targetOffset = $target.offset().top;
+         $(this).click(function() {
+           $('html, body').animate({scrollTop: targetOffset}, 400);
+           return false;
+         });
+      }
+    }
+  });
+});
+</script>  <!--- Dieser Code ist für das weiche Scrollen verantwortlich -->
+</body>
+</html>

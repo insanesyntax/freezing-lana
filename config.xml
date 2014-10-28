@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "de.sicherimnetz"
+        version     = "1.0.0"
+        versionCode = "10" >
+
+        <!-- versionCode is optional and Android only -->
+
+        <preference name="phonegap-version" value="3.5.0" />
+
+        <name>Sicher im Netz Config.xml</name>
+
+        <description>
+        Deine Fragen werden beantwortet. Alles rund um Facebook, Whatsapp und Instagram. 
+        </description>
+
+        <author href="http://wolfskaempf.de" email="tom@wolfskaempf.de">
+        Tom Wolfskämpf
+        </author>
+
+    </widget>

@@ -1,0 +1,105 @@
+.cd-primary-nav a {
+		text-decoration: 
+		none
+		;
+}
+
+.jumbotron {
+	height: 
+		100%;
+	width: 
+		100%;
+	display: 
+		table
+		;
+	background-color: #ef6f56;
+}
+
+#headerjumbotron {
+	text-align: 
+		center;
+	display: 
+		table-cell
+		;
+	vertical-align: 
+		middle
+		;
+}
+
+h1 {
+	margin-bottom: 
+		20px;
+	font-size: 
+		30px;
+	color: 
+		#d1dc48;
+	border: 
+		7px solid;
+	border-color: 
+		#d1dc48;
+	padding: 
+		20px 20px;
+}
+
+#h1-h2-schuetzdich {
+	color: 
+		#fff;
+}
+
+h2 {
+	font-family: 
+		 "helvetica neue"
+		;
+	font-weight: 
+		100
+		;
+	font-size: 
+		40px;
+	margin-bottom: 40px;
+}
+
+#btn-rosa {
+	font-family: "helvetica neue", "helvetica", "arial", sans-serif;
+	font-size: 25px;
+	font-weight: 200;
+	padding: 9px 27px;
+	border-radius: 2px;
+	color: #ff5a5f;
+	background-color: #fff;
+	border-color: #ff5a5f;
+	border-bottom-color: #e00007;
+	text-decoration: none;
+	-o-transition:color .2s ease-out, background 0.2s ease-in;
+  -ms-transition:color .2s ease-out, background 0.2s ease-in;
+  -moz-transition:color .2s ease-out, background 0.2s ease-in;
+  -webkit-transition:color .2s ease-out, background 0.2s ease-in;
+  /* mit der eigentlichen CSS Option überschreiben */
+  transition:color .2s ease-out, background 0.2s ease-in;
+}
+
+#btn-rosa:hover {
+	color: #e00007;
+	background-color: #d1dc48;
+}
+
+#linkzumvideo {
+	margin-top: 40px;
+}
+
+#videoanchor {
+	position: 
+		relative
+		;
+	top: 
+		-15px;
+}
+
+#video {
+	margin-top: 
+		-15px;
+}
+
+.footer {
+	padding-top: 
+		100px;
+}
