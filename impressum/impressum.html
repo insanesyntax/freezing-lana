@@ -13,44 +13,60 @@
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 	<link rel="stylesheet" href="css/finalstyle.css"> <!-- Letzer Schliff -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr Skript -->
-  	
-	<title>Schütz' Dich, deine Daten und deine Zukunft!</title>
+
+	<title>Impressum</title>
 </head>
 <body>
 	<nav>
 		<ul class="cd-primary-nav"> <!--- Das Menü oben rechts in der Ecke, jedes <li> ist ein Eintrag -->
+            <li><a href="index.html">Home</a></li>
 			<li><a href="fragenantworten/fragenantworten.html">Zu den Anleitungen</a></li>
 			<li><a href="#0">Der Gedanke hinter dem Projekt</a></li>
 			<li><a href="#0">Wer wir sind</a></li>
-			<li><a href="impressum/impressum.html">Impressum</a></li>
+			<li><a href="impressum.html">Impressum</a></li>
 			<li><a href="#0">Haftungsausschluss</a></li>
 		</ul>
 	</nav>
-	
+
 		<div class="jumbotron"> <!--- Das Jumbotron ist mit einer Höhe von 100% immer so hoch, dass es die gesamte initiale Fläche bedeckt -->
 			<div class="container" id="headerjumbotron">
-				<h1 id="h1-h2-schuetzdich">Schütz' Dich, deine Daten & deine Zukunft!</h1>
-				<h2 id="h1-h2-schuetzdich">Deine Fragen, deine Antworten</h2>
+				<h1 id="h1-h2-schuetzdich">Impressum</h1>
+                <h2 id="h1-h2-schuetzdich">Infos über die Herausgeber</h2>
 				<div>
-					<a href="fragenantworten/fragenantworten.html" id="btn-rosa">Los geht's</a>
+					<a href="index.html" id="btn-rosa">Home</a>
 				</div>
 				<div id="linkzumvideo">
-					<a href="#videoanchor" id="btn-rosa">Video</a>
+					<a href="#videoanchor" id="btn-rosa">Nach unten</a>
 				</div>
 			</div>
 		</div>
-		
+
 		<div id="video" class="container-fluid">
-			<a id="videoanchor"></a> <!--- Der Knopf "Video" führt hier hin, durch css ist der anchor 15px nach oben (top: -15px) gesetzt, um perfekt mit dem gelben Rand abzuschließen -->
-			<div class="embed-responsive embed-responsive-16by9">
-				<iframe class="embed-responsive-item" src="//www.youtube.com/embed/4hGP_MyZq8U?modestbranding=1&autohide=1&showinfo=0&controls=0"></iframe>
+			<a id="videoanchor"></a> <!--- Der Knopf "Nach unten" führt hier hin, durch css ist der anchor 15px nach oben (top: -15px) gesetzt, um perfekt mit dem gelben Rand abzuschließen -->
+			<div class="jumbotron impressum">
+                <h2>Angaben gemäß § 5 TMG:</h2>
+                <p>Tom Wolfskämpf<br />
+                Goethestr. 1<br />
+                49356 Diepholz
+                </p>
+                <h2>Kontakt:</h2>
+                <table><tr>
+                <td>Telefon:</td>
+                <td>+4917691377432</td></tr>
+                <tr><td>E-Mail:</td>
+                <td>tom@wolfskaempf.de</td>
+                </tr></table>
+                <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h2>
+                <p>Max Mustermann<br />
+                Straße Nummer<br />
+                PLZ, Ort</p>
 			</div>
 		</div>
-	
+
 	<div class="footer">
 		<p></p>
 	</div>
-		
+
 		<!-- cd-content -->
 
 	<div class="cd-overlay-nav">
@@ -62,7 +78,7 @@
 	</div> <!-- cd-overlay-content -->
 
 	<a href="#0" class="cd-nav-trigger">Menü<span class="cd-icon"></span></a>
-	
+
 
 <script src="js/jquery-2.1.1.js"></script>
 <script src="js/velocity.min.js"></script>
@@ -71,8 +87,8 @@
 $(document).ready(function() {
   function filterPath(string) {
     return string
-      .replace(/^\//,'')  
-      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')  
+      .replace(/^\//,'')
+      .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
       .replace(/\/$/,'');
   }
   $('a[href*=#]').each(function() {
