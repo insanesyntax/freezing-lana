@@ -19,8 +19,16 @@
     background-color: #d1dc48;
 }
 
-.impressum h1 h2 h3 p {
-    color: #ef6f56;
+.allred {
+    color: #e00007;
+}
+
+.allhelvetica {
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+}
+
+.nomargin {
+    margin: 0px;
 }
 
 #headerjumbotron {
