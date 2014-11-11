@@ -89,7 +89,7 @@ h2 {
   -ms-transition:color .2s ease-out, background 0.2s ease-in;
   -moz-transition:color .2s ease-out, background 0.2s ease-in;
   -webkit-transition:color .2s ease-out, background 0.2s ease-in;
-  /* mit der eigentlichen CSS Option überschreiben */
+  /* mit der eigentlichen CSS Option überschreiben falls der Browser sie unterstützt*/
   transition:color .2s ease-out, background 0.2s ease-in;
 }
 
