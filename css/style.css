@@ -380,3 +380,13 @@ header {
   }
 --------------------------------*/
 }
+
+@media only screen and (max-width:768px) {
+	.h1-schuetzdich {
+		font-size: 45px
+	}
+	
+	.h2-schuetzdich {
+		font-size:30px
+	}
+}
