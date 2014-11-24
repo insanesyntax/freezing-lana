@@ -119,9 +119,13 @@ h2 {
 		-15px;
 }
 
-#video {
+#videos {
 	margin-top: 
 		-15px;
+}
+
+.videomargin {
+    margin-bottom: 15px;
 }
 
 .footer {
